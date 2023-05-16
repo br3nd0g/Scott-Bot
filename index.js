@@ -20,10 +20,6 @@ client.on('ready', () => {
 
 });
 
-client.on('messageCreate', async (message) => {
-    
-});
-
 client.login(process.env.clToken);
 
 setInterval(function() {
