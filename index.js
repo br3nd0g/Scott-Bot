@@ -30,8 +30,6 @@ setInterval(function() {
     // check if scott user id status is offline, if not, send message going "@everyone scott online"
     let scottStatus = statusCheck()
     statusComparison(scottStatus)
-    console.log(scottStatus)
-    console.log("looper")
 
 }, 15 * 1000); 
 
