@@ -1,9 +1,9 @@
 require('dotenv').config();
 const { Client, Events, GatewayIntentBits, ActivityType } = require('discord.js');
 
-const targetServer = '1082296054512369789';
-const targetMember = '1015588653164142663';
-const targetChannel = '1082296055317667923';
+const targetServer = '1009526889670512711';
+const targetMember = '417014490748682251';
+const targetChannel = '1098937406159335485';
 let targetObj;
 let scottOnline = false
 const messages = ["Scott is here and ready to party!", "Scott is now online! Hooray!", "Scott is online, yippeeeeeeeeeeeeee"]
