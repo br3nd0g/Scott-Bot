@@ -36,6 +36,12 @@ function alertEveryone(){
     channel.send(`@everyone ${messages[randomIndex]}`);
 }
 
+function alertOffline(){
+    const channel = client.channels.cache.get(targetChannel);
+    channel.send("Scott went offline :(")
+    channel.send("https://tenor.com/view/emoji-emotional-crying-tears-cry-gif-15213720")
+}
+
 function statusCheck(){
     //gets guild object of the guild, gets userpresence object of user, gets status
     const guild = client.guilds.resolve(targetServer);
@@ -49,5 +55,6 @@ function statusComparison(status){
         alertEveryone()
     } else if (scottOnline === true && status === "offline"){
         scottOnline = false
+        alertOffline()
     }
 }
